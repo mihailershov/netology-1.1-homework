@@ -22,23 +22,23 @@
 			<table>
 				<tr>
 					<td class="first-cell">Имя</td>
-					<td><?= $myName ?></td>
+					<td><?php echo $myName ?></td>
 				</tr>
 				<tr>
 					<td class="first-cell">Возраст</td>
-					<td><?= $myAge ?></td>
+					<td><?php echo $myAge ?></td>
 				</tr>
 				<tr>
 					<td class="first-cell">Почта</td>
-					<td><a href="mailto:mihershov9@gmail.com"><?= $myEmail ?></a></td>
+					<td><a href="mailto:mihershov9@gmail.com"><?php echo $myEmail ?></a></td>
 				</tr>
 				<tr>
 					<td class="first-cell">Город</td>
-					<td><?= $myCity ?></td>
+					<td><?php echo $myCity ?></td>
 				</tr>
 				<tr>
 					<td class="first-cell">Немного о себе</td>
-					<td><?= $aboutMe ?></td>
+					<td><?php echo $aboutMe ?></td>
 				</tr>
 			</table>
 		</div>
@@ -52,13 +52,13 @@
 		-->
 		<div class="code">
 			<h1 class="code-h1">Исходный код страницы</h1>
-			<pre class="prettyprint linenums lang-html">
+			<pre class="prettyprint linenums">
 	&lt;?php
 		$myName = "Михаил";
 		$myAge = 16;
 		$myEmail = "mihershov9@gmail.com";
 		$myCity = "Saint-Petersburg";
-		$aboutMe = "Увлекаюсь дизайном, веб-разработкой. 
+		$aboutMe = "Увлекаюсь дизайном, веб-разработкой.
 		Хочу научиться создавать годные веб-приложения.";
 	?&gt;
 	&lt;!DOCTYPE html&gt;
@@ -73,23 +73,23 @@
 			&lt;table&gt;
 				&lt;tr&gt;
 					&lt;td class="first-cell"&gt;Имя&lt;/td&gt;
-					&lt;td class="second-cell"&gt;&lt;?= $myName ?&gt;&lt;/td&gt;
+					&lt;td class="second-cell"&gt;&lt;?php echo $myName ?&gt;&lt;/td&gt;
 				&lt;/tr&gt;
 				&lt;tr&gt;
 					&lt;td class="first-cell"&gt;Возраст&lt;/td&gt;
-					&lt;td class="second-cell"&gt;&lt;?= $myAge ?&gt;&lt;/td&gt;
+					&lt;td class="second-cell"&gt;&lt;?php echo $myAge ?&gt;&lt;/td&gt;
 				&lt;/tr&gt;
 				&lt;tr&gt;
 					&lt;td class="first-cell"&gt;Почта&lt;/td&gt;
-					&lt;td class="second-cell"&gt;&lt;?= $myEmail ?&gt;&lt;/td&gt;
+					&lt;td class="second-cell"&gt;&lt;?php echo $myEmail ?&gt;&lt;/td&gt;
 				&lt;/tr&gt;
 				&lt;tr&gt;
 					&lt;td class="first-cell"&gt;Город&lt;/td&gt;
-					&lt;td class="second-cell"&gt;&lt;?= $myCity ?&gt;&lt;/td&gt;
+					&lt;td class="second-cell"&gt;&lt;?php echo $myCity ?&gt;&lt;/td&gt;
 				&lt;/tr&gt;
 				&lt;tr&gt;
 					&lt;td class="first-cell"&gt;Немного о себе&lt;/td&gt;
-					&lt;td class="second-cell"&gt;&lt;?= $aboutMe ?&gt;&lt;/td&gt;
+					&lt;td class="second-cell"&gt;&lt;?php echo $aboutMe ?&gt;&lt;/td&gt;
 				&lt;/tr&gt;
 			&lt;/table&gt;
 		&lt;/div&gt;
